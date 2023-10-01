@@ -1,0 +1,14 @@
+<app-main-layout>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="bookmark-col">
+        <ion-card *ngFor="let mail of items; let i = index;">
+          <div class="bookmark">
+            <ion-img [src]="mail.img"></ion-img>
+            <label (click)="detailPage(mail.message)"> Food is not just fuel; it's an experience.</label>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</app-main-layout>
