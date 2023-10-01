@@ -9,16 +9,18 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { LayoutsModule } from "../../layouts/layouts.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-    ComponentsModule,
-    EditorModule
-  ],
-  declarations: [HomePage]
+    declarations: [HomePage],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomePageRoutingModule,
+        ComponentsModule,
+        EditorModule,
+        LayoutsModule
+    ]
 })
 export class HomePageModule {}

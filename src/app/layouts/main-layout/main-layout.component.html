@@ -1,0 +1,32 @@
+<ion-header >
+  <ion-toolbar color="warning">
+    <ion-title color="light" class="title">FoodBlog</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="main-layout">
+  <ng-content></ng-content>
+</ion-content>
+<!-- <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="news" routerDirection="root" routerLink="/news">
+      <ion-icon name="newspaper-outline"></ion-icon>
+      News
+    </ion-tab-button>
+    <ion-tab-button tab="home" routerDirection="root" routerLink="/home">
+      <ion-icon name="home-outline"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button tab="bookmarks" routerDirection="root" routerLink="/bookmarks">
+      <ion-icon name="bookmarks-outline"></ion-icon>
+      Bookmarks
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs> -->
+<div class="custom-tabs">
+  <a class="menu-btn" *ngFor="let item of menuItem" [routerLink]="item.link" routerLinkActive="active">
+    <div>
+      <ion-icon name="{{item.icon}}"></ion-icon>
+      <div class="indicator"></div>
+    </div>
+  </a>
+</div>

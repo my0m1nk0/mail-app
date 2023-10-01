@@ -6,6 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-layout.component.scss'],
 })
 export class MainLayoutComponent  implements OnInit {
+  menuItem = [
+    {
+      icon: "mail-unread-outline",
+      link: "/home"
+    },
+    {
+      icon: "send-outline",
+      link: "/edit-mail"
+    }
+
+  ];
 
   constructor() { }
 
